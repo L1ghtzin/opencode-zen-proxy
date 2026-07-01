@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: opencode-zen-proxy
+    env: node
+    buildCommand: pnpm install
+    startCommand: pnpm start
+    autoDeploy: false

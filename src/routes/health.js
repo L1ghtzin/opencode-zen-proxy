@@ -20,6 +20,15 @@ router.get('/health', (_req, res) => {
 });
 
 /**
+ * GET /ping
+ *
+ * Simple ping endpoint to keep the service alive 24/7 (avoids cold starts).
+ */
+router.get('/ping', (_req, res) => {
+  res.send('pong');
+});
+
+/**
  * GET /
  *
  * Root endpoint with basic info.
